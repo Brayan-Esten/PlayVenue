@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PlayVenue | {{ $title }}</title>
 
@@ -13,7 +13,7 @@
     {{-- icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
-    {{-- custom / personal --}}
+    {{-- custom --}}
     <link rel="stylesheet" href="/css/custom.css">
     
 </head>
@@ -21,11 +21,7 @@
 <body>
 
     @include('partials.navbar')
-
-    <div class="container mt-4">
-        @yield('container')
-    </div>
-
+    @yield('content')
     @include('partials.footer')
     
     {{-- bootstrap js --}}

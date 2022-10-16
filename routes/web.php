@@ -18,3 +18,15 @@ Route::get('/', function () {
         'title' => 'HOME'
     ]);
 });
+
+Route::get('/about', function () {
+    return view('about', [
+        'title' => 'ABOUT'
+    ]);
+});
+
+Route::get('/news', function () {
+    return view('news', [
+        'title' => 'NEWS'
+    ]);
+});

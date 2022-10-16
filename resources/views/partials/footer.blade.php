@@ -1,4 +1,4 @@
-<footer class="footer footer-expand-lg">
+<footer class="footer footer-expand-lg mt-5">
 
     <div class="my-footer container-fluid col-lg-11 d-flex justify-between pt-4 pb-5 position-relative">
 

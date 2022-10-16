@@ -1,16 +1,16 @@
 @font-face {
     font-family: "airnt";
-    src: url('/fonts/AirntQuantum-JRMra.otf');
+    src: url("/fonts/AirntQuantum-JRMra.otf");
 }
 
-:root{
+:root {
     --dblue: #326789;
     --lblue: #76a8cb;
     --white: #e9eef2;
     --red: #e65c4f;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
@@ -18,7 +18,7 @@ a{
     background-color: var(--lblue);
 }
 
-.my-navbar-brand{
+.my-navbar-brand {
     font-family: airnt;
     color: var(--lblue);
     user-select: none;
@@ -27,7 +27,7 @@ a{
     -webkit-text-stroke: 1px #fff;
 }
 
-.my-navbar-brand::before{
+.my-navbar-brand::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ a{
     background-color: #fff;
     background-clip: text;
     overflow: hidden;
-    
+
     -webkit-background-clip: text;
     -webkit-text-fill: transparent;
     -webkit-text-stroke: 0 var(--white);
@@ -49,12 +49,12 @@ a{
     animation-fill-mode: forwards;
 }
 
-.nav-link{
+.nav-link {
     color: #eee;
     position: relative;
 }
 
-.nav-link::before{
+.nav-link::before {
     content: "";
     background-color: #fff;
     position: absolute;
@@ -62,43 +62,43 @@ a{
     right: 50%;
     top: 100%;
     height: 2px;
-    transition: .6s;
+    transition: 0.6s;
 }
 
-.nav-link:hover{
-    transition: .6s;
+.nav-link:hover {
+    transition: 0.6s;
     color: #fff;
 }
 
-.nav-link:hover::before{
+.nav-link:hover::before {
     left: -10%;
     right: -10%;
 }
 
-@keyframes init{
-    0%{
+@keyframes init {
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 100%;
     }
 }
 
-.footer{
+.footer {
     color: #fff;
     background-color: var(--dblue);
 }
 
-.soc-med a{
+.soc-med a {
     margin-right: 1em;
     color: #fff;
 }
 
-.soc-med a i{
+.soc-med a i {
     font-size: 1.5rem;
 }
 
-.my-footer::before{
+.my-footer::before {
     content: "";
     background-color: #fff;
     position: absolute;
@@ -108,11 +108,98 @@ a{
     height: 2px;
 }
 
-.footer-links a, .footer span{
-    font-size: .9rem;
+.footer-links a,
+.footer span {
+    font-size: 0.9rem;
     color: #fff;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     text-decoration: underline !important;
+}
+
+.btn-primary{
+    background-color: var(--lblue) !important;
+    border: none !important;
+}
+
+.category{
+    background-color: var(--white);
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 0 .6em 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.category::after{
+    content: "";
+    background-color: var(--lblue);
+    position: absolute;
+    z-index: -1;
+    left: -150%;
+    right: -25%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-15deg) scale(0, 1);
+    transition: .3s;
+}
+
+.category img{
+    width: 60%;
+    filter: invert(0);
+    transition: .6s;
+}
+
+.category:hover img {
+    filter:  invert(100%);
+    transform: scale(1.2);
+}
+
+.category:hover::after {
+    transform: skewX(-15deg) scale(1, 1);
+}
+
+.questions > div{
+    border-radius: 10px;
+    font-size: .8em;
+}
+
+.questions > div:nth-child(odd){
+    background-color: var(--dblue);
+    color: white;
+}
+
+.questions > div:nth-child(even){
+    background-color: var(--white);
+    color: black;
+}
+
+.team-card-header{
+    height: 100px;
+    background: linear-gradient(180deg, var(--lblue) 0%, var(--dblue) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 12px -2px;
+    display: grid;
+    place-items: center;
+}
+
+.team-card-body{ 
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.photo-frame{
+    width: 100px;
+    height: 100px;
+}
+
+.photo-frame img{
+    width: 100%;
 }

@@ -20,11 +20,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="/about">ABOUT</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">NEWS</a>
+                    <a class="nav-link" href="/news">NEWS</a>
                 </li>
 
             </ul>
