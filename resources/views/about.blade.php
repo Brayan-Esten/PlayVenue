@@ -20,19 +20,18 @@
         <div class="questions mt-4">
             <h3>Frequently Asked <span style="color: blue;">Questions</span></h3>
 
-            <div class="w-75 p-3 mt-3">
+            <div class="w-75 p-3 mt-3 text-bold">
                 <div class="d-flex">
                     <i class="bi bi-question-circle"></i>
                     <p style="margin-left: 1em;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, 
-                        incidunt. Ullam error perferendis illum, nobis at nam et incidunt recusandae.
+                        Bagaimana cara sistem refund bekerja ?
                     </p>
                 </div>
                 <div class="d-flex">
                     <i class="bi bi-lightbulb"></i>
                     <p style="margin-left: 1em;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, 
-                        incidunt. Ullam error perferendis illum, nobis at nam et incidunt recusandae.
+                        Customer dapat membatalkan reservasi lapangan dengan jaminan uang
+                        kembali 100% yang berlaku sebelum h-3 jadwal main.
                     </p>
                 </div>
             </div>
@@ -41,15 +40,16 @@
                 <div class="d-flex">
                     <i class="bi bi-question-circle"></i>
                     <p style="margin-left: 1em;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, 
-                        incidunt. Ullam error perferendis illum, nobis at nam et incidunt recusandae.
+                        Apakah jenis olahraga yang tersedia hanya sebatas pada yang ada di menu ?
                     </p>
                 </div>
                 <div class="d-flex">
                     <i class="bi bi-lightbulb"></i>
                     <p style="margin-left: 1em;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, 
-                        incidunt. Ullam error perferendis illum, nobis at nam et incidunt recusandae.
+                        Untuk saat ini, jenis permainan olahraga yang kami sediakan masih terbatas 
+                        dan masih dalam tahap pengembangan. Maka dari itu, kami ingin fokus mempertahankan
+                        konsistensi kualitas layanan kami lebih dulu sebelum menambahkan jenis permainan 
+                        olahraga yang lain.
                     </p>
                 </div>
             </div>
