@@ -1,0 +1,36 @@
+.questions > div{
+    border-radius: 10px;
+    font-size: .8em;
+}
+
+.questions > div:nth-child(odd){
+    background-color: var(--dblue);
+    color: white;
+}
+
+.questions > div:nth-child(even){
+    background-color: var(--white);
+    color: black;
+}
+
+.team-card-header{
+    height: 100px;
+    background: linear-gradient(180deg, var(--lblue) 0%, var(--dblue) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 12px -2px;
+    display: grid;
+    place-items: center;
+}
+
+.team-card-body{ 
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.photo-frame{
+    width: 100px;
+    height: 100px;
+}
+
+.photo-frame img{
+    width: 100%;
+}
