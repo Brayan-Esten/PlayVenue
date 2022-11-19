@@ -12,7 +12,7 @@
         </button>
 
         <!-- right side -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
             <ul class="navbar-nav col-lg-6 d-flex justify-content-around">
 
                 <li class="nav-item">
@@ -29,14 +29,45 @@
 
             </ul>
 
-            <ul class="navbar-nav ms-auto">
+            
+            <ul class="navbar-nav d-flex justify-content-around col-lg-4">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">
-                        <i class="bi bi-box-arrow-in-right"></i>
-                        LOGIN
-                    </a>
-                </li>
+                @auth
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            TO DO
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-size: 1.2rem;">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/">Profile</a></li>
+                            <li>
+                                <form action="/logout" method="post">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        Log Out
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a href="/register" class="nav-link">
+                            REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">
+                            LOGIN
+                        </a>
+                    </li>
+                @endauth
 
             </ul>
 

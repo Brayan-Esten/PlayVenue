@@ -6,13 +6,18 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     margin: 0 .6em 0;
-    display: grid;
-    place-items: center;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
     transition: .6s;
+}
+
+.category a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .category::after{
@@ -59,14 +64,24 @@
     color: #000;
 }
 
-#badminton .carousel-inner{
+#badminton .carousel-inner,
+#basket .carousel-inner,
+#volley .carousel-inner,
+#swim .carousel-inner,
+#futsal .carousel-inner,
+#bowling .carousel-inner{
     display: flex;
     padding: 1em;
     background-color: var(--dblue);
     flex-wrap: nowrap;
 }
 
-#badminton .carousel-item{
+#badminton .carousel-item,
+#basket .carousel-item,
+#volley .carousel-item,
+#swim .carousel-item,
+#futsal .carousel-item,
+#bowling .carousel-item{
     display: block;
     flex: 0 0 25%;
     margin: 0 .7em;

@@ -1,0 +1,12 @@
+.input-group-text {
+    width: 33%;
+    background-color: var(--dblue);
+    color: var(--white);
+    border-radius: 10px 0 0 10px;
+}
+
+.input-group input{
+    width: 67%;
+    color: #000;
+    border-radius: 0 10px 10px 0;
+}
