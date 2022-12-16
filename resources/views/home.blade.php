@@ -55,19 +55,19 @@
             <div class="row">
 
                 <div class="category">
-                    <a href="#badminton">
+                    <a href="#badminton_section">
                         <img src="/img/categories/badmin.png" alt="">
                     </a>
                 </div>
 
                 <div class="category">
-                    <a href="#basket">
+                    <a href="#basket_section">
                         <img src="/img/categories/basket.png" alt="">
                     </a>
                 </div>
 
                 <div class="category">
-                    <a href="#voli">
+                    <a href="#voli_section">
                         <img src="/img/categories/voli.png" alt="">
                     </a>
                 </div>
@@ -77,19 +77,19 @@
             <div class="row mt-3">
 
                 <div class="category">
-                    <a href="#renang">
+                    <a href="#renang_section">
                         <img src="/img/categories/renang.png" alt="">
                     </a>
                 </div>
 
                 <div class="category">
-                    <a href="#futsal">
+                    <a href="#futsal_section">
                         <img src="/img/categories/futsal.png" alt="">
                     </a>
                 </div>
 
                 <div class="category">
-                    <a href="#bowling">
+                    <a href="#bowling_section">
                         <img src="/img/categories/bowling.png" alt="">
                     </a>
                 </div>
@@ -104,7 +104,7 @@
 
 <br>
 
-<div class="mt-5">
+<div class="mt-5" id="badminton_section">
     
     <div class="section-header p-3">
         <h4 class="ms-2">
@@ -119,75 +119,51 @@
             @for($i = 0; $i < 10; $i++)
             <div class="carousel-item @if($i == 0) active @endif">
 
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_badminton.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
                         </div>
 
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Lapangan Badminton Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Badminton</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -196,12 +172,10 @@
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
         </button>
     </div>
 
@@ -209,112 +183,7 @@
 
 <br>
 
-<div class="mt-5">
-    
-    <div class="section-header p-3">
-        <h4 class="ms-2">
-            Voli
-        </h4>
-    </div>
-
-    <div id="volley" class="carousel slide mt-3" data-bs-interval="false">
-
-        <div class="carousel-inner p-4">
-
-            @for($i = 0; $i < 10; $i++)
-            <div class="carousel-item @if($i == 0) active @endif">
-
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
-                        </div>
-
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Lapangan Voli Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Voli</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            @endfor
-
-        </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-</div>
-
-<br>
-
-<div class="mt-5">
+<div class="mt-5" id="basket_section">
     
     <div class="section-header p-3">
         <h4 class="ms-2">
@@ -329,75 +198,51 @@
             @for($i = 0; $i < 10; $i++)
             <div class="carousel-item @if($i == 0) active @endif">
 
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_basket.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
                         </div>
 
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Lapangan Basket Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Basket</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -406,12 +251,10 @@
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
         </button>
     </div>
 
@@ -419,7 +262,86 @@
 
 <br>
 
-<div class="mt-5">
+<div class="mt-5" id="voli_section">
+    
+    <div class="section-header p-3">
+        <h4 class="ms-2">
+            Voli
+        </h4>
+    </div>
+
+    <div id="volley" class="carousel slide mt-3" data-bs-interval="false">
+
+        <div class="carousel-inner p-4">
+
+            @for($i = 0; $i < 10; $i++)
+            <div class="carousel-item @if($i == 0) active @endif">
+
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_voli.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
+                        </div>
+
+                    </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
+                </div>
+
+            </div>
+            @endfor
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-slide="prev">
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-slide="next">
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
+        </button>
+    </div>
+
+</div>
+
+<br>
+
+<div class="mt-5" id="renang_section">
     
     <div class="section-header p-3">
         <h4 class="ms-2">
@@ -434,76 +356,51 @@
             @for($i = 0; $i < 10; $i++)
             <div class="carousel-item @if($i == 0) active @endif">
 
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen>
-                        </iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_renang.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
                         </div>
 
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Swimming Pool Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Renang</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -512,12 +409,10 @@
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
         </button>
     </div>
 
@@ -525,7 +420,7 @@
 
 <br>
 
-<div class="mt-5">
+<div class="mt-5" id="futsal_section">
     
     <div class="section-header p-3">
         <h4 class="ms-2">
@@ -540,75 +435,51 @@
             @for($i = 0; $i < 10; $i++)
             <div class="carousel-item @if($i == 0) active @endif">
 
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_futsal.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
                         </div>
 
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Lapangan Futsal Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Futsal</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -617,12 +488,10 @@
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
         </button>
     </div>
 
@@ -630,7 +499,7 @@
 
 <br>
 
-<div class="mt-5">
+<div class="mt-5" id="bowling_section">
     
     <div class="section-header p-3">
         <h4 class="ms-2">
@@ -645,75 +514,51 @@
             @for($i = 0; $i < 10; $i++)
             <div class="carousel-item @if($i == 0) active @endif">
 
-                <div class="card map-card">
-                    
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; width: 100%">
-                        <iframe src="https://maps.google.com/maps?q=Lapangan%20Bulutangkis%20Talenta&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="card-body closed px-0">
-                        
-                        <div class="button px-1 mt-2">
-                            <a class="btn btn-floating btn-lg living-coral text-light float-end" style="margin-right: .75em;">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
+                <div class="custom-card">
+
+                    <div class="card__side card__side--front">
+
+                        <img src="/img/lap_bowling.jpg" class="card-img-top" alt="..." style="height: 75%;">
+                        <div class="card-body text-dark d-flex justify-content-center align-items-center"
+                        style="height: 25%;">
+                            <h5 class="card-title text-light">Dummy Data</>
                         </div>
 
-                        <div class="bg-white px-4 pb-4 pt-3">
-
-                            <h5 class="card-title living-coral-text">Arena Bowling Talenta</h5>
-                            <div class="d-flex align-items-center justify-content-between living-coral-text">
-                                <h6 class="card-subtitle font-weight-light">Bowling</h6>
-                                <h6 class="font-small font-weight-light">
-                                    <button class="btn living-coral text-white">Book</button>
-                                </h6>
-                            </div>
-            
-                            <hr>
-
-                            <div class="d-flex justify-content-evenly text-uppercase living-coral-text">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-telephone"></i>
-                                    <p class="mb-0">Call</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p class="mb-0">WA</p>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-geo-alt-fill living-coral-text"></i>
-                                        </th>
-                                        <td>
-                                            Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-clock living-coral-text"></i>
-                                        </th>
-                                        <td class="pb-3 pt-2">
-                                            Opens 10 AM | Closed 9 PM
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <i class="bi bi-cash living-coral-text">
-                                        </th>
-                                        <td>
-                                            IDR 65K - IDR 90K
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+
+                    <div class="card__side card__side--back p-3 d-flex flex-column align-items-center">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </th>
+                                    <td>
+                                        Jl. Sahabat Baru No.92 Daerah Khusus Ibukota Jakarta 11510, Indonesia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-clock"></i>
+                                    </th>
+                                    <td class="pb-3 pt-2">
+                                        Opens @ 10 AM | Closes @ 9 PM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <i class="bi bi-cash living-coral-text">
+                                    </th>
+                                    <td>
+                                        IDR 65K / Hour
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="custom-btn btn--white">BOOK</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -722,15 +567,15 @@
         </div>
         
         <button class="carousel-control-prev" type="button" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
+            <span><i class="bi bi-arrow-left-square-fill"></i></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
+            <span><i class="bi bi-arrow-right-square-fill"></i></span>
         </button>
     </div>
 
 </div>
+
+<br>
 
 @endsection
